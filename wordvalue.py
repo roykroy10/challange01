@@ -1,8 +1,8 @@
 from data import DICTIONARY, LETTER_SCORES
-from itertools import permutations
+from itertools import permutations ## Used in the combinations function
 
 
-def find_optimal(string):
+def find_optimal(string): ## Uses the combinations fuction and max_word_value function
     maxword = max_word_value(combinations(string))
     return maxword, calc_word_value(maxword)
 
